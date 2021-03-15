@@ -1,0 +1,8 @@
+{{ errors }}
+login page
+<form method="post" action="{% url 'accounts:login' %}">
+    {% csrf_token %}
+    email: <input type="email" name="email">
+    password: <input type="password" name="password">
+    <input type="submit" value="Submit">
+</form>
