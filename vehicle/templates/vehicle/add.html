@@ -1,0 +1,16 @@
+{{ errors }}
+<form enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+    name:<input type="text" name="name"><br>
+    number plate:<input type="text" name="number_plate"><br>
+    Vehicle Photo:<input type="file" name="vehicle" accept="image/*"><br>
+    km_driven:<input type="number" name="km_driven"><br>
+    price_per_day:<input type="number" name="price_per_day"><br>
+    wheeler:<input type="number" name="wheeler"><br>
+    seat:<input type="number" name="seat"><br>
+    transmission:<input type="text" name="transmission"><br>
+    type:<input type="text" name="type"><br>
+    details:<input type="text" name="details"><br>
+    <input type="submit" value="submit"><br>
+</form>
+
